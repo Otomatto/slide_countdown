@@ -88,12 +88,20 @@ class DigitItem extends BaseDigits {
         : [
             firstDigitWidget,
             secondDigitWidget,
-            separatorWidget,
           ];
 
-    return Row(
+    return 
+    
+    Column(
+            mainAxisSize: MainAxisSize.min,
+
+      children: [
+Row(
       mainAxisSize: MainAxisSize.min,
       children: children,
-    );
+    ),
+    separatorWidget
+      ],
+    ) 
   }
 }
