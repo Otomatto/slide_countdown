@@ -90,18 +90,15 @@ class DigitItem extends BaseDigits {
             secondDigitWidget,
           ];
 
-    return 
-    
-    Column(
-            mainAxisSize: MainAxisSize.min,
-
-      children: [
-Row(
+    return Column(
       mainAxisSize: MainAxisSize.min,
-      children: children,
-    ),
-    separatorWidget
+      children: [
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: children,
+        ),
+        separatorWidget
       ],
-    ) 
+    );
   }
 }
