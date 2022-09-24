@@ -414,6 +414,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
           padding: widget.padding,
           child: Row(
             mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: widget.textDirection.isRtl
                 ? [
                     suffixIcon,
@@ -424,7 +425,6 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                     leadingIcon,
                   ]
                 : [
-                    leadingIcon,
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -433,7 +433,6 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                       child: Padding(
                         padding: const EdgeInsets.all(2.0),
                         child: Container(
-                          width: 120,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.white,
@@ -443,13 +442,12 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: daysWidget,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 16),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -462,18 +460,17 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             shape: BoxShape.circle,
                             color: Colors.white,
                             border: Border.all(
-                              color: Color(0xff056FB7),
+                              color: Color(0xff18457A),
                               width: 2,
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: hoursWidget,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 16),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -486,18 +483,17 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             shape: BoxShape.circle,
                             color: Colors.white,
                             border: Border.all(
-                              color: Color(0xff056FB7),
+                              color: Color(0xffE63628),
                               width: 2,
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: minutesWidget,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 16),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -510,18 +506,17 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             shape: BoxShape.circle,
                             color: Colors.white,
                             border: Border.all(
-                              color: Color(0xff056FB7),
+                              color: Colors.black,
                               width: 2,
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.all(16.0),
                             child: secondsWidget,
                           ),
                         ),
                       ),
                     ),
-                    suffixIcon,
                   ],
           ),
         );

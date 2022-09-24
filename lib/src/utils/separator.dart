@@ -19,9 +19,14 @@ class Separator extends StatelessWidget {
     if (!show) return const SizedBox.shrink();
     return Padding(
       padding: padding ?? EdgeInsets.zero,
-      child: Text(
-        separator,
-        style: style,
+      child: Container(
+        width: 55,
+        child: Center(
+          child: Text(
+            separator,
+            style: style,
+          ),
+        ),
       ),
     );
   }
