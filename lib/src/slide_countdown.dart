@@ -411,10 +411,10 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
         final secondsWidget = showSeconds ? seconds : const SizedBox.shrink();
 
         final countdown = Padding(
-          padding: widget.padding,
+          padding: EdgeInsets.zero,
           child: Row(
             mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: widget.textDirection.isRtl
                 ? [
                     suffixIcon,
@@ -431,7 +431,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                         shape: BoxShape.circle,
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(0.0),
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -442,7 +442,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: daysWidget,
                           ),
                         ),
@@ -454,7 +454,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                         shape: BoxShape.circle,
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(0.0),
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -465,7 +465,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: hoursWidget,
                           ),
                         ),
@@ -477,7 +477,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                         shape: BoxShape.circle,
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(0.0),
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -488,7 +488,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: minutesWidget,
                           ),
                         ),
@@ -500,7 +500,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                         shape: BoxShape.circle,
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(2.0),
+                        padding: const EdgeInsets.all(0.0),
                         child: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -511,7 +511,7 @@ class _SlideCountdownState extends State<SlideCountdown> with CountdownMixin {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(12.0),
                             child: secondsWidget,
                           ),
                         ),
